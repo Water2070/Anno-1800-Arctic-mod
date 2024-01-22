@@ -1,0 +1,24 @@
+<ModOps>
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>2110000041</GUID>
+      <Text>Eau-de-vie arctique</Text>
+    </Text>
+    <Text>
+      <GUID>2110000037</GUID>
+      <Text>Distillerie arctique</Text>
+    </Text>
+    <Text>
+      <GUID>2110000038</GUID>
+      <Text>Distillerie arctique</Text>
+    </Text>
+    <Text>
+      <GUID>2110000039</GUID>
+      <Text>Eau-de-vie arctique</Text>
+    </Text>
+    <Text>
+      <GUID>2110000040</GUID>
+      <Text>Eau-de-vie arctique</Text>
+    </Text>
+  </ModOp>
+</ModOps>
