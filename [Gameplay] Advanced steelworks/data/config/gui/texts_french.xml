@@ -1,0 +1,12 @@
+<ModOps>
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>2100000014</GUID>
+      <Text>Poutres d'acier</Text>
+    </Text>
+    <Text>
+      <GUID>2100000013</GUID>
+      <Text>Aciérie avancée</Text>
+    </Text>
+  </ModOp>
+</ModOps>

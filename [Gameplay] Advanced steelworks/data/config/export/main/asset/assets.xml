@@ -1,0 +1,525 @@
+<ModOps>
+  <!-- ModTool Factory -->
+  <ModOp GUID="100451" Type="addNextSibling">
+    <Asset>
+      <Values>
+        <Standard>
+          <Comments />
+          <Version>main</Version>
+          <GUID>2110000043</GUID>
+          <Name>Arctic steelworks</Name>
+          <IconFilename>data/graphics/icons/icon_arctic_steelworks.png</IconFilename>
+          <InfoDescription>11143</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingType>Factory</BuildingType>
+          <BuildingCategoryName>100000</BuildingCategoryName>
+          <Destructable>1</Destructable>
+          <Movable>1</Movable>
+          <MoveConfirmationPopup>[NONE]</MoveConfirmationPopup>
+          <MoveRequiredGodlike>[NONE]</MoveRequiredGodlike>
+          <PickingAsset>0</PickingAsset>
+          <ConstructionMenuText>0</ConstructionMenuText>
+          <HasBorderRectOutline>1</HasBorderRectOutline>
+          <SnapRadius>2</SnapRadius>
+          <InfluencedByNeighbors />
+          <InfluencedVariationDirection />
+          <BuildingBlockPool />
+          <SecondPartyRelevant>1</SecondPartyRelevant>
+          <BuildModeStartVariation>-1</BuildModeStartVariation>
+          <VariationIcons />
+          <AllowCodeToControlRotation>1</AllowCodeToControlRotation>
+          <ModuleParentType>None</ModuleParentType>
+          <BuildModeRandomRotation>180</BuildModeRandomRotation>
+          <AssociatedRegions>Arctic</AssociatedRegions>
+          <TerrainType>Terrain</TerrainType>
+        </Building>
+        <Blocking>
+          <HidePropsRadius>1</HidePropsRadius>
+          <DeletePropsRadius>1</DeletePropsRadius>
+          <StreetOutside>0</StreetOutside>
+          <RemoveGrass>1</RemoveGrass>
+          <BlocksBuilding>1</BlocksBuilding>
+          <ProvideLocalHeightForFeedbackLayer>1</ProvideLocalHeightForFeedbackLayer>
+          <ProvideLocalHeightForStreetLayer>1</ProvideLocalHeightForStreetLayer>
+          <GroundDecalAsset>0</GroundDecalAsset>
+          <GroundDecalAssetExtra>0</GroundDecalAssetExtra>
+          <GroundDecalInvisible>0</GroundDecalInvisible>
+          <HasBuildingBaseTiles>0</HasBuildingBaseTiles>
+        </Blocking>
+        <Cost>
+          <ItemsPerCost>1</ItemsPerCost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>10000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+          </Costs>
+          <InfluenceCostType>None</InfluenceCostType>
+          <InfluenceCostPoints>1</InfluenceCostPoints>
+        </Cost>
+        <Object>
+          <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+          <Type>GameObject</Type>
+          <Skins>
+            <DefaultSkinName>1010296</DefaultSkinName>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+            <DefaultSkinCategoryName>7312</DefaultSkinCategoryName>
+          </Skins>
+          <DefaultParticipant>Neutral</DefaultParticipant>
+          <AddToObjectGroups>1</AddToObjectGroups>
+          <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+          <PlacableInEditor>1</PlacableInEditor>
+          <SelectableInEditor>1</SelectableInEditor>
+          <LoadFromDemoMap>1</LoadFromDemoMap>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/buildings/production/heavy_01/heavy_01.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh>
+          <ObjectPosition>Static</ObjectPosition>
+          <MeshPlacement>Default</MeshPlacement>
+          <DefaultSequence>idle01</DefaultSequence>
+          <InitialVisibility>1</InitialVisibility>
+          <ConstructionEffectDuration>600</ConstructionEffectDuration>
+          <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+          <MoveEffectDuration>600</MoveEffectDuration>
+          <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+          <ConstructionEffectScale>1</ConstructionEffectScale>
+          <LogoMode>Disabled</LogoMode>
+        </Mesh>
+        <Selection>
+          <GUIType>Production</GUIType>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+          <RuinGUIType>GenericRuins</RuinGUIType>
+          <StaticHelpEntryPoint>None</StaticHelpEntryPoint>
+          <Selectable>1</Selectable>
+          <DestructSelectable>1</DestructSelectable>
+          <InteractionDistance>15</InteractionDistance>
+          <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+          <InfoCorner>25000131</InfoCorner>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+          <DetectionToken>0</DetectionToken>
+          <SecondGUIType>Generic</SecondGUIType>
+          <ParticipantMessageArcheType>Arctic_Resident_tier02_atWork</ParticipantMessageArcheType>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Steelworks</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <Localize>1</Localize>
+          <TextOverride>0</TextOverride>
+          <LineID>5264</LineID>
+        </Text>
+        <Constructable>
+          <DestructionCategory>Production</DestructionCategory>
+          <ConstructionMode>Default</ConstructionMode>
+          <DestructionType>0</DestructionType>
+        </Constructable>
+        <Locked>
+          <DefaultLockedState>1</DefaultLockedState>
+          <DLCDependency>0</DLCDependency>
+          <Scope>Participant</Scope>
+        </Locked>
+        <FeedbackController>
+          <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+          <UpdateMeshSequence>1</UpdateMeshSequence>
+          <NightBehavior>HideRand</NightBehavior>
+        </FeedbackController>
+        <Infolayer>
+          <DefaultInfoLayer>0</DefaultInfoLayer>
+          <AdditionalYOffset>2</AdditionalYOffset>
+        </Infolayer>
+        <UpgradeList>
+          <DefaultBuff>0</DefaultBuff>
+        </UpgradeList>
+        <Factory7>
+        </Factory7>
+        <FactoryBase>
+          <BaseProductivity>100</BaseProductivity>
+          <ProductivityTimeMultiplier>5</ProductivityTimeMultiplier>
+          <ProductivityPoints>30</ProductivityPoints>
+          <WarehouseTransporterAsset>1010105</WarehouseTransporterAsset>
+          <OutputAmountFactor>100</OutputAmountFactor>
+          <MissingConnectionInfolayer>500449</MissingConnectionInfolayer>
+          <NeedsFiniteResources />
+          <ProductionOutputInfotip>25000208</ProductionOutputInfotip>
+          <IsMainFactory>0</IsMainFactory>
+          <FactoryOutputs>
+            <Item>
+              <Product>1010218</Product>
+              <Amount>1</Amount>
+              <StorageAmount>2</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <CycleTime>45</CycleTime>
+          <FactoryInputs>
+            <Item>
+              <Product>1010219</Product>
+              <Amount>1</Amount>
+              <StorageAmount>5</StorageAmount>
+            </Item>
+          </FactoryInputs>
+        </FactoryBase>
+        <AmbientMoodProvider>
+          <DynamicEnvironmentType>Building_Industry</DynamicEnvironmentType>
+          <AmbientMood>IndustryHeavy</AmbientMood>
+          <Murmur>Factory</Murmur>
+          <GlacierMurmur>None</GlacierMurmur>
+          <AttractivityDependentMurmur />
+          <ProductivityDependentMurmur />
+          <IslandAttractivityDependentMurmur />
+          <HappinessDependentMurmur />
+          <MonumentNoEventMurmur>None</MonumentNoEventMurmur>
+        </AmbientMoodProvider>
+        <Attackable>
+          <HasRuinState>1</HasRuinState>
+          <AttackableType>IslandBuilding</AttackableType>
+          <MaximumHitPoints>4750</MaximumHitPoints>
+          <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+          <HPBarOffset>6</HPBarOffset>
+          <BlockBuildActionsAfterAttackDuration>15000</BlockBuildActionsAfterAttackDuration>
+          <IslandWarFlag>0</IslandWarFlag>
+          <RuinSmokeParticles />
+          <ExplosionEffects />
+          <SelfHealPerHealTick>6</SelfHealPerHealTick>
+          <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        </Attackable>
+        <Pausable>
+          <CanPauseManually>1</CanPauseManually>
+        </Pausable>
+        <Culture>
+          <Attractiveness>-10</Attractiveness>
+          <CultureType>Factory</CultureType>
+          <Sets />
+          <UndiscoveredSet>0</UndiscoveredSet>
+          <ModuleListHeader>0</ModuleListHeader>
+          <OpenSetPages>0</OpenSetPages>
+          <Feedback_AllowSpawnAtEntranceComing>1</Feedback_AllowSpawnAtEntranceComing>
+          <HasPollution>1</HasPollution>
+        </Culture>
+        <IncidentInfluencer>
+          <Influence>
+            <Fire>
+              <Influence>5</Influence>
+              <Distance>5</Distance>
+            </Fire>
+            <Illness>
+              <Influence>5</Influence>
+              <Distance>10</Distance>
+            </Illness>
+          </Influence>
+          <DistanceMultiplier>1</DistanceMultiplier>
+        </IncidentInfluencer>
+        <Industrializable>
+          <TransporterIndustrializationFactory>120028</TransporterIndustrializationFactory>
+          <TransporterIndustrializationWarehouse>120027</TransporterIndustrializationWarehouse>
+          <ReceivingIndustrializationType>Powerplant</ReceivingIndustrializationType>
+          <MandatoryIndustrialization>0</MandatoryIndustrialization>
+          <BoostedByIndustrialization>1</BoostedByIndustrialization>
+        </Industrializable>
+        <QuestObject />
+        <Electrifiable>
+          <ElectricityBoost>1</ElectricityBoost>
+          <ShowPowerInObjectMenu>1</ShowPowerInObjectMenu>
+        </Electrifiable>
+        <EcoSystemProvider>
+          <AffectedQuality>Water</AffectedQuality>
+        </EcoSystemProvider>
+        <LogisticNode />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>203830</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveSuccess>
+              <Item>
+                <Sound>203993</Sound>
+              </Item>
+            </BuildMoveSuccess>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <ExplosionOneShots>
+              <Item>
+                <Sound>203848</Sound>
+              </Item>
+            </ExplosionOneShots>
+          </IncidentSounds>
+          <ActiveSounds>
+            <Item>
+              <Sound>214813</Sound>
+            </Item>
+            <Item>
+              <Sound>202429</Sound>
+            </Item>
+          </ActiveSounds>
+          <SelectionSounds>
+            <Item>
+              <Sound>9818389</Sound>
+            </Item>
+          </SelectionSounds>
+          <ConstructionStreetSounds />
+          <VehicleSounds />
+          <ProjectileSounds />
+          <WeaponSounds />
+          <SpawnSounds />
+          <CollectedSounds />
+          <ProductionSounds />
+          <RFX />
+          <BuildingRuined />
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+          <MultiplayerBuildingSounds />
+          <MaterialType>Metal</MaterialType>
+        </SoundEmitter>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>1000</Amount>
+              <InactiveAmount>500</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>112654</Product>
+              <Amount>200</Amount>
+              <InactiveAmount>100</InactiveAmount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Heated>
+          <RequiresHeat>0</RequiresHeat>
+        </Heated>
+        <IncidentInfectable>
+          <IncidentInfectionChanceFactors>
+            <Explosion>
+              <BaseChance>4</BaseChance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryOvertimeFactor>0.1</FactoryOvertimeFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+            </Explosion>
+            <Fire>
+              <BaseChance>15</BaseChance>
+              <DensityDistance>20</DensityDistance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+            </Fire>
+            <Riot>
+              <FactoryOvertimeFactor>0.4</FactoryOvertimeFactor>
+              <FactoryUndertimeFactor>0.2</FactoryUndertimeFactor>
+            </Riot>
+            <Illness />
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+      </Values>
+      <Template>HeavyFactoryBuilding</Template>
+      <ModTool>
+        <ModToolVersion>12.11.2022</ModToolVersion>
+        <ModToolMenu>prev;112791;8528;2</ModToolMenu>
+        <ModToolTrigger>2;;;;;112643;750;112643;1000</ModToolTrigger>
+        <ModToolRegions>Arctic</ModToolRegions>
+        <ModToolAuthor>Water</ModToolAuthor>
+        <ModToolTiers>2100000008;1010305;0;0;114705;0;0;0;0;0;0;0;0;0</ModToolTiers>
+        <ModToolProductionChain>2110000047</ModToolProductionChain>
+        <ModToolEffectList>193770;190611;193879;368;193771;24053;190842;193856;193875;6000018</ModToolEffectList>
+      </ModTool>
+    </Asset>
+  </ModOp>
+  <ModOp GUID="500029" Type="addNextSibling">
+    <Asset>
+      <Template>ProductionChain</Template>
+      <!-- ProductionChain -->
+      <Values>
+        <Standard>
+          <GUID>2110000047</GUID>
+          <Name>production chain</Name>
+          <IconFilename>data/graphics/icons/icon_arctic_steelworks.png</IconFilename>
+        </Standard>
+        <ProductionChain>
+          <Building>2110000043</Building>
+          <Tier1>
+            <Item>
+              <!-- Arctic furnace -->
+              <Building>2110000025</Building>
+              <Tier2>
+                <Item>
+                  <!-- Iron Mine -->
+                  <Building>1010305</Building>
+                </Item>
+                <Item>
+                  <!-- Charcoal Kiln -->
+                  <Building>114705</Building>
+                </Item>
+              </Tier2>
+            </Item>
+          </Tier1>
+        </ProductionChain>
+        <Locked />
+        <Text>
+          <LocaText>
+            <English>
+              <Text>chain</Text>
+              <Status>Exported</Status>
+              <ExportCount>2</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>14906</LineID>
+        </Text>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="add" GUID="193770,368,193771,24053,190842,193856,193875,6000018" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <!-- Pool Lists -->
+    <Item>
+      <GUID>2110000043</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="addPrevSibling" GUID="112791" Path="/Values/ConstructionCategory/BuildingList/Item[Building='8528' or (position()=1 and (not(../Item[Building='8528'])))]">
+    <!-- Build Menu -->
+    <Item>
+      <Building>2110000047</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="addnextSibling" GUID="112644">
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>2110000045</GUID>
+          <Name>MOD Trigger</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>112643</Context>
+                <CounterAmount>750</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>2110000043</Asset>
+                        <!-- 2110000043 -->
+                      </Item>
+                      <Item>
+                        <Asset>2110000047</Asset>
+                        <!-- Production Chain -->
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addnextSibling" GUID="112644">
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>2110000046</GUID>
+          <Name>MOD Trigger</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>112643</Context>
+                <CounterAmount>1000</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>2110000043</Asset>
+                        <!-- 2110000043 -->
+                      </Item>
+                      <Item>
+                        <Asset>2110000047</Asset>
+                        <!-- Production Chain -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+  </ModOp>
+</ModOps>
