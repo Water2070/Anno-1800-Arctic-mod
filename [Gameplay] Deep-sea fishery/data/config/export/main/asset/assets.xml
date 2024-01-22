@@ -1,0 +1,346 @@
+<Modops> 
+    <!-- START PRODUCTION - Deep-sea fishery-->
+  <ModOp Type="addNextSibling" GUID='114703'>
+    <Asset>
+        <Template>FactoryBuilding7</Template>
+        <Values>
+            <Standard>
+                <GUID>2110000019</GUID>
+                <Name>Deep-sea fishery</Name>
+                <IconFilename>data/graphics/icons/deep_fish.png</IconFilename>
+                <InfoDescription>2110000020</InfoDescription>
+            </Standard>
+            <Building>
+				<TerrainType>Coast</TerrainType>
+                <BuildModeRandomRotation>90</BuildModeRandomRotation>
+                <AssociatedRegions>Arctic</AssociatedRegions>
+            </Building>
+			<Blocking>
+                <GroundDecalAsset>114826</GroundDecalAsset>
+                <GroundDecalInvisible>113478</GroundDecalInvisible>
+                <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+            </Blocking>
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient> <!-- Coins -->
+                        <Amount>1000</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>1010196</Ingredient> <!-- Timber -->
+                        <Amount>8</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>1010205</Ingredient> <!-- Bricks -->
+                    </Item>
+                    <Item>
+                        <Ingredient>1010218</Ingredient> <!-- Steal Beams -->
+                        <Amount>3</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>1010207</Ingredient> <!-- Windows -->
+                        <Amount>2</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>1010202</Ingredient> <!-- Reinforced concrete -->
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+              <Variations>
+                <Item>
+                  <Filename>data/graphics/buildings/production/production_deep_fishery/production_deep_fishery.cfg</Filename>
+                </Item>
+              </Variations>
+            </Object>
+            <Selection>
+                <ParticipantMessageArcheType>Arctic_Resident_tier01_atWork</ParticipantMessageArcheType>
+            </Selection>
+            <Text>
+                <LocaText>
+                    <English>
+                        <Text>Deep-sea fishery</Text>
+                        <Status>Exported</Status>
+                        <ExportCount>2</ExportCount>
+                    </English>
+                </LocaText>
+            </Text>
+            <SoundEmitter>
+                <ConstructionSounds>
+                    <BuildSuccessful>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                                <InheritanceMapV2>
+                                    <Entry>
+                                        <TemplateName>FactoryBuilding7</TemplateName>
+                                        <Index>0</Index>
+                                    </Entry>
+                                </InheritanceMapV2>
+                            </VectorElement>
+                            <Sound>214784</Sound>
+                        </Item>
+                    </BuildSuccessful>
+                    <BuildMoveSuccess>
+                        <Item>
+                            <Sound>214784</Sound>
+                        </Item>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                                <InheritanceMapV2>
+                                	<Entry>
+                                        <TemplateName>FactoryBuilding7</TemplateName>
+                                        <Index>0</Index>
+                                    </Entry>
+                                </InheritanceMapV2>
+                            </VectorElement>
+                        </Item>
+                    </BuildMoveSuccess>
+                    </ConstructionSounds>
+                    <RFX>
+                        <Item>
+                            <RFX>240013</RFX>
+                        </Item>
+                    </RFX>
+                    <BuildingRepaired>
+                        <Item>
+                            <Sound>203866</Sound>
+                        </Item>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                                <InheritanceMapV2>
+                                    <Entry>
+                                        <TemplateName>FactoryBuilding7</TemplateName>
+                                        <Index>0</Index>
+                                    </Entry>
+                                </InheritanceMapV2>
+                            </VectorElement>
+                        </Item>
+                    </BuildingRepaired>
+                </SoundEmitter>
+            <FactoryBase>
+				<FactoryInputs>
+                    <Item>
+                        <Product>917</Product> <!-- GOOD - Water -->
+                    </Item>
+                </FactoryInputs>
+                <FactoryOutputs>
+                    <Item>
+                        <Product>1010200</Product> <!-- GOOD - Fish -->
+                        <Amount>1</Amount>
+                        <StorageAmount>8</StorageAmount>
+                    </Item>
+                </FactoryOutputs>
+                <CycleTime>15</CycleTime>
+                <IsMainFactory>0</IsMainFactory>
+            </FactoryBase>
+			<AmbientMoodProvider>
+                <Murmur>Arctic_Factory</Murmur>
+                <DynamicEnvironmentType>Harbor</DynamicEnvironmentType>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product> <!-- Amount of coins upkeep -->
+                        <Amount>100</Amount>
+                        <InactiveAmount>50</InactiveAmount>
+                    </Item>
+                    <Item>
+                        <Product>112653</Product> <!-- Amount of Workforce - Explorers -->
+                        <Amount>50</Amount>
+                    </Item>
+					<Item>
+                        <Product>119392</Product> <!-- Amount of research point upkeep -->
+                        <Amount>10</Amount>
+						<InactiveAmount>3</InactiveAmount>
+                    </Item>
+                </Maintenances>
+            </Maintenance>
+			<Attackable>
+                <MaximumHitPoints>2000</MaximumHitPoints>
+                <HPBarOffset>4</HPBarOffset>
+                <PausedTimeIfAttacked>0</PausedTimeIfAttacked>
+                <SelfHealPerHealTick>5</SelfHealPerHealTick>
+                <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+                <DefenseByAIFactor>100</DefenseByAIFactor>
+                <TakeOverEffect>OnDeath</TakeOverEffect>
+                <MoralePower>25</MoralePower>
+                <IslandWarFlag>102303</IslandWarFlag>
+                <RuinSmokeParticles>
+                    <Item>
+                        <SmokeParticleFilePath>data/graphics/effects/military/explosions/damage_smoke_01.cfg</SmokeParticleFilePath>
+                    </Item>
+                </RuinSmokeParticles>
+                <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
+                <RuinSmokeParticlesMax>3</RuinSmokeParticlesMax>
+                <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+                <ExplosionEffects>
+                    <Item>
+                        <ExplosionEffectFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_03.cfg</ExplosionEffectFilePath>
+                    </Item>
+                </ExplosionEffects>
+                <ExplosionEffectsMin>1</ExplosionEffectsMin>
+                <ExplosionEffectsMax>2</ExplosionEffectsMax>
+            </Attackable>
+			<Heated>
+                <RequiresHeat>1</RequiresHeat>
+                <MissingHeatInfolayer>116919</MissingHeatInfolayer>
+            </Heated>
+            <Industrializable>
+                <BoostedByIndustrialization>0</BoostedByIndustrialization>
+            </Industrializable>
+        </Values>
+    </Asset>
+  </ModOp>
+  <!-- END PRODUCTION - Deep-sea fishery -->
+  <!-- START ADD BUILDING TO ALL ITEMEFFECTTARGETPOOLS  -->
+  <ModOp Type="add" GUID='6000018,193856,193770,190897,190779,193400' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+        <GUID>2110000019</GUID> <!-- BUILDING - Deep-sea fishery  -->
+    </Item>
+  </ModOp>
+  <!-- END ADD BUILDING TO ALL ITEMEFFECTTARGETPOOLS -->
+  <!-- START PRODUCTION CHAIN - Deep fish -->
+  <ModOp Type="addNextSibling" GUID='112710'>
+    <Asset>
+        <Template>ProductionChain</Template>
+        <Values>
+            <Standard>
+                <GUID>2110000023</GUID> <!-- CHAIN - Deep fish  -->
+                <Name>Deep fish</Name>
+                <IconFilename>data/graphics/icons/deep_fish.png</IconFilename>
+                <InfoDescription>2110000024</InfoDescription>
+            </Standard>
+            <ProductionChain>
+                <Building>2110000019</Building> <!-- BUILDING - Citrus Tea Dryer  -->
+                <!--Tier1>
+                    <Item>
+                        <Building>133031</Building>  <- BUILDING - Orchard: Citrus Fruit ->
+                    </Item>
+                </Tier1 -->
+            </ProductionChain>
+            <Locked />
+            <Text>
+                <LocaText>
+                    <English>
+                        <Text>Deep-sea fishery</Text>
+                        <Status>Exported</Status>
+                        <ExportCount>2</ExportCount>
+                    </English>
+                </LocaText>
+            </Text>
+        </Values>
+    </Asset>
+  </ModOp>
+  <!-- END PRODUCTION CHAIN - Deep fish -->
+  <!-- START ADD CHAIN TO BUILDING MENU ConstructionCategory - Explorers / arctic construction menu 1 (tier) (112790) -->
+  <ModOp Type="addNextSibling" GUID='112790' Path="/Values/ConstructionCategory/BuildingList/Item[Building='112713']">
+    <Item>
+        <Building>2110000019</Building> <!-- CHAIN - Citrus Tea  -->
+    </Item>
+  </ModOp>
+  <!-- END ADD CHAIN TO BUILDING MENU -->
+  <!-- START ADD CHAIN TO BUILDING MENU ConstructionCategory - Consumables / arctic construction menu needs (category) (116344) -->
+  <ModOp Type="addNextSibling" GUID='116344' Path="/Values/ConstructionCategory/BuildingList/Item[Building='112713']">
+    <Item>
+        <Building>2110000019</Building> <!-- CHAIN - Citrus Tea  -->
+    </Item>
+  </ModOp>
+  <!-- END ADD CHAIN TO BUILDING MENU CATEGORY -->
+  <!-- START TRIGGER -->
+  <ModOp Type="addnextSibling" GUID="112644">
+    <!--UNHIDE - 0 explorers -->
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>2110000021</GUID>
+          <Name>MOD Trigger</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>112642</Context> <!-- explorers -->
+                <CounterAmount>0</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>2110000023</Asset> <!-- CHAIN - Deep fish -->
+                      </Item>
+                      <Item>
+                        <Asset>2110000019</Asset> <!-- BUILDING - Deep-sea fishery  -->
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addnextSibling" GUID="112644">
+    <!--UNLOCK - 100 explorers -->
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>210000022</GUID>
+          <Name>MOD Trigger</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>112642</Context> <!-- explorers -->
+                <CounterAmount>100</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>2110000023</Asset> <!-- CHAIN - deep fish -->
+                      </Item>
+                      <Item>
+                        <Asset>2110000019</Asset> <!-- BUILDING - Deep-sea fishery  -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- END TRIGGER -->
+</Modops>

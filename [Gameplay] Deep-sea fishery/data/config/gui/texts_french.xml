@@ -1,0 +1,33 @@
+<Modops>
+    <ModOp Type="add" Path="/TextExport/Texts">
+    <!-- START BUILDING - Deep fishery -->
+    <Text>
+      <GUID>2110000019</GUID>
+      <Text>Pêcherie en eaux profondes</Text>
+    </Text>
+    <Text>
+      <GUID>2110000020</GUID>
+      <Text>Pêcherie en eaux profondes</Text>
+    </Text>
+    <!-- END BUILDING - Deep fishery -->
+    <!-- START TRIGGER - Deep fish -->
+    <Text>
+      <GUID>2110000021</GUID>
+      <Text>Poisson des profondeurs</Text>
+    </Text>
+    <Text>
+      <GUID>2110000022</GUID>
+      <Text>Poisson des profondeurs</Text>
+    </Text>
+    <!-- END TRIGGER - Deep fish -->
+    <!-- START TRIGGER - Deep fish -->
+    <Text>
+      <GUID>2110000023</GUID>
+      <Text>Poisson des profondeurs</Text>
+    </Text>
+    <Text>
+      <GUID>2110000024</GUID>
+      <Text>Poisson des profondeurs</Text>
+    </Text>
+    <!-- END TRIGGER - Deep fish -->
+</Modops>
