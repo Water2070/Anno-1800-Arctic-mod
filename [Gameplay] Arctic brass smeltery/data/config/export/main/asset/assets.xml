@@ -1,0 +1,326 @@
+<Modops>
+  <!-- START PRODUCTION - Arctic brass smeltery -->
+  <ModOp Type="addNextSibling" GUID='112666'>
+    <Asset>
+        <Template>HeavyFactoryBuilding</Template>
+        <Values>
+            <Standard>
+                <GUID>2110000013</GUID>
+                <Name>Arctic brass smeltery</Name>
+                <IconFilename>data/graphics/icons/arctic_brass.png</IconFilename>
+                <InfoDescription>2110000014</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildModeRandomRotation>90</BuildModeRandomRotation>
+                <AssociatedRegions>Arctic</AssociatedRegions>
+            </Building>
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient> <!-- Coins -->
+                        <Amount>32000</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>1010196</Ingredient> <!-- Timber -->
+                        <Amount>18</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>1010205</Ingredient> <!-- Bricks -->
+                        <Amount>5</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>1010218</Ingredient> <!-- Steal Beams -->
+                        <Amount>25</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>1010207</Ingredient> <!-- Windows -->
+                        <Amount>5</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>1010202</Ingredient> <!-- Reinforced concrete -->
+                        <Amount>5</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+              <Variations>
+                <Item>
+                  <Filename>data/graphics/buildings/production/production_arctic_brass_smeltery/production_arctic_brass_smeltery.cfg</Filename>
+                </Item>
+              </Variations>
+            </Object>
+            <Selection>
+              <ParticipantMessageArcheType>Arctic_Resident_tier02_atWork</ParticipantMessageArcheType>
+              <Colors>
+                <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+              </Colors>
+            </Selection>
+            <Text>
+                <LocaText>
+                    <English>
+                        <Text>Arctic brass smeltery</Text>
+                        <Status>Exported</Status>
+                        <ExportCount>2</ExportCount>
+                    </English>
+                </LocaText>
+            </Text>
+            <SoundEmitter>
+                <ActiveSounds>
+                    <Item>
+                        <Sound>203866</Sound> <!-- brass smeltery sounds -->
+                    </Item>
+                </ActiveSounds>
+            </SoundEmitter>
+            <FeedbackController />
+            <Infolayer />
+            <UpgradeList />
+            <RandomDummySpawner />
+            <Factory7 />
+            <LogisticNode />
+            <AmbientMoodProvider>
+                <Murmur>Factory</Murmur>
+            </AmbientMoodProvider>
+            <Attackable>
+                <MaximumHitPoints>2750</MaximumHitPoints>
+                <SelfHealPerHealTick>6</SelfHealPerHealTick>
+            </Attackable>
+            <FactoryBase>
+                <FactoryInputs>
+                    <Item>
+                        <Product>1010230</Product> <!-- Copper -->
+                        <Amount>1</Amount>
+                        <StorageAmount>6</StorageAmount>
+                    </Item>
+                    <Item>
+                        <Product>1010229</Product> <!-- Zinc -->
+                        <Amount>1</Amount>
+                        <StorageAmount>6</StorageAmount>
+                    </Item>
+                </FactoryInputs>
+                <FactoryOutputs>
+                    <Item>
+                        <Product>1010204</Product> <!-- GOOD - Brass -->
+                        <Amount>1</Amount>
+                        <StorageAmount>4</StorageAmount>
+                    </Item>
+                </FactoryOutputs>
+                <CycleTime>90</CycleTime>
+                <IsMainFactory>0</IsMainFactory>
+            </FactoryBase>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product> <!-- Amount of coins upkeep -->
+                        <Amount>450</Amount>
+                        <InactiveAmount>250</InactiveAmount>
+                    </Item>
+                    <Item>
+                        <Product>112654</Product> <!-- Amount of Workforce - technicians -->
+                        <Amount>100</Amount>
+                    </Item>
+                </Maintenances>
+            </Maintenance>
+            <Industrializable>
+                <MandatoryIndustrialization>0</MandatoryIndustrialization>
+                <BoostedByIndustrialization>1</BoostedByIndustrialization>
+            </Industrializable>
+            <Heated>
+                <RequiresHeat>0</RequiresHeat>
+                <MissingHeatInfolayer>116919</MissingHeatInfolayer>
+            </Heated>
+            <Electrifiable>
+                <ElectricityBoost>1</ElectricityBoost>
+            </Electrifiable>
+            <IncidentInfectable>
+              <Infectable>
+                <Illness>
+                  <Escalated>0</Escalated>
+                </Illness>
+              </Infectable>
+              <Explosion>
+                <ExplosionCoreDamage>2000</ExplosionCoreDamage>
+                <DamageExplosionChance>40</DamageExplosionChance>
+              </Explosion>
+              <IncidentInfectionChanceFactors>
+                <Fire>
+                  <BaseChance>10</BaseChance>
+                  <DensityDistance>20</DensityDistance>
+                  <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+                  <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+                </Fire>
+                <Explosion>
+                  <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+                  <FactoryOvertimeFactor>0.1</FactoryOvertimeFactor>
+                  <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+                </Explosion>
+                <Riot>
+                  <FactoryOvertimeFactor>0.4</FactoryOvertimeFactor>
+                  <FactoryUndertimeFactor>0.2</FactoryUndertimeFactor>
+                  <FactoryHappinessFactor>0.2</FactoryHappinessFactor>
+                  <HappinessThreshold>20</HappinessThreshold>
+                </Riot>
+              </IncidentInfectionChanceFactors>
+            </IncidentInfectable>
+            <IncidentInfluencer>
+              <Influence>
+                  <Illness>
+                      <Distance>10</Distance>
+                  </Illness>
+              </Influence>
+            </IncidentInfluencer>
+        </Values>
+    </Asset>
+  </ModOp>
+  <!-- END PRODUCTION - Arctic brass smeltery -->
+  <!-- START ADD BUILDING TO ALL ITEMEFFECTTARGETPOOLS  -->
+  <ModOp Type="add" GUID='6000018,193875,193770,193771' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+        <GUID>2110000013</GUID> <!-- BUILDING - Arctic brass smeltery  -->
+    </Item>
+  </ModOp>
+  <!-- END ADD BUILDING TO ALL ITEMEFFECTTARGETPOOLS -->
+  <!-- START PRODUCTION CHAIN - Arctic brass -->
+  <ModOp Type="addNextSibling" GUID='117268'>
+    <Asset>
+        <Template>ProductionChain</Template>
+        <Values>
+            <Standard>
+                <GUID>2110000017</GUID> <!-- CHAIN - Arctic brass  -->
+                <Name>Arctic brass</Name>
+                <IconFilename>data/graphics/icons/arctic_brass.png</IconFilename>
+                <InfoDescription>2110000018</InfoDescription>
+            </Standard>
+            <ProductionChain>
+                <Building>2110000013</Building> <!-- BUILDING - Arctic brass smeltery -->
+                <Tier1>
+                    <Item>
+                        <Building>1010307</Building> <!-- BUILDING - Zinc mine -->
+                    </Item>
+                    <Item>
+                        <Building>1010308</Building> <!-- BUILDING - Copper mine -->
+                    </Item>
+                </Tier1>
+            </ProductionChain>
+            <Locked />
+            <Text>
+                <LocaText>
+                    <English>
+                        <Text>Arctic brass</Text>
+                        <Status>Exported</Status>
+                        <ExportCount>2</ExportCount>
+                    </English>
+                </LocaText>
+            </Text>
+        </Values>
+    </Asset>
+  </ModOp>
+  <!-- END PRODUCTION CHAIN - Arctic brass -->
+  <!-- START ADD CHAIN TO BUILDING MENU ConstructionCategory - Technicians / arctic construction menu 2 (tier) (112791) -->
+  <ModOp Type="addNextSibling" GUID='112791' Path="/Values/ConstructionCategory/BuildingList/Item[Building='117075']">
+    <Item>
+        <Building>2110000017</Building> <!-- CHAIN - Arctic brass chains -->
+    </Item>
+  </ModOp>
+  <!-- END ADD CHAIN TO BUILDING MENU -->
+  <!-- START ADD CHAIN TO BUILDING MENU ConstructionCategory - materials / arctic construction menu materials (category) (116342) -->
+  <ModOp Type="addNextSibling" GUID='116342' Path="/Values/ConstructionCategory/BuildingList/Item[Building='112709']">
+    <Item>
+        <Building>2110000017</Building> <!-- CHAIN - Arctic brass chains -->
+    </Item>
+  </ModOp>
+  <!-- END ADD CHAIN TO BUILDING MENU -->
+  <!-- START TRIGGER -->
+  <ModOp Type="addnextSibling" GUID="112644">
+    <!--UNHIDE - 300 Technicians -->
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>2110000015</GUID>
+          <Name>MOD Trigger</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>112643</Context> <!-- Technicians -->
+                <CounterAmount>300</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>2110000017</Asset> <!-- CHAIN - Arctic brass -->
+                      </Item>
+                      <Item>
+                        <Asset>2110000013</Asset> <!-- BUILDING - Arctic brass smeltery  -->
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addnextSibling" GUID="112644">
+    <!--UNLOCK - 750 technicians -->
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>2110000016</GUID>
+          <Name>MOD Trigger</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>112643</Context> <!-- Technicians -->
+                <CounterAmount>750</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>2110000017</Asset> <!-- CHAIN - Arctic brass -->
+                      </Item>
+                      <Item>
+                        <Asset>2110000013</Asset> <!-- BUILDING - Arctic brass smeltery -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+  </Modop>
+  <!-- END TRIGGER -->
+</Modops>

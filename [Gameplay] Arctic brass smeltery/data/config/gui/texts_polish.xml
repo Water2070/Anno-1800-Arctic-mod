@@ -1,0 +1,33 @@
+<ModOps>
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <!-- START BUILDING - Arctic brass smeltery -->
+    <Text>
+      <GUID>2110000013</GUID>
+      <Text>Arctic brass smeltery</Text>
+    </Text>
+    <Text>
+      <GUID>2110000014</GUID>
+      <Text>Arctic brass smeltery</Text>
+    </Text>
+    <!-- END BUILDING - Arctic brass smeltery -->
+    <!-- START TRIGGER - Arctic brass -->
+    <Text>
+      <GUID>2110000015</GUID>
+      <Text>Arctic brass</Text>
+    </Text>
+    <Text>
+      <GUID>2110000016</GUID>
+      <Text>Arctic brass</Text>
+    </Text>
+    <!-- END TRIGGER - Arctic brass -->
+    <!-- START CHAINS - Arctic brass -->
+    <Text>
+      <GUID>2110000017</GUID>
+      <Text>Arctic brass</Text>
+    </Text>
+    <Text>
+      <GUID>2110000018</GUID>
+      <Text>Arctic brass</Text>
+    </Text>
+    <!-- END CHAINS - Arctic brass -->
+</ModOps>
